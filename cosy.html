@@ -1,54 +1,54 @@
 <!DOCTYPE html>
 <html>
-    <head>
-        <meta charset="utf-8" />
-        <title>Cosy Street</title>
+<head>
+    <meta charset="utf-8" />
+    <title>Cosy Street</title>
 
-        <link rel="stylesheet" type="text/css" href="leaflet/leaflet.css" />
-        <link rel="stylesheet" type="text/css" href="cosy.css" />
+    <link rel="stylesheet" type="text/css" href="leaflet/leaflet.css" />
+    <link rel="stylesheet" type="text/css" href="cosy.css" />
 
     <!--
-        <link rel="stylesheet" href="geoSearch/css/l.geosearch.css">
-    -->
+    <link rel="stylesheet" href="geoSearch/css/l.geosearch.css">
+-->
 
-        <link rel="stylesheet" href="leaflet-control-geocoder/Control.Geocoder.css" />
+<link rel="stylesheet" href="leaflet-control-geocoder/Control.Geocoder.css" />
 
-    </head>
+</head>
 
-    <body>
-    	<header></header>
+<body>
+    <header></header>
 
-        <div id="slideout">
-          <img src="https://d30y9cdsu7xlg0.cloudfront.net/png/218672-200.png" alt="App's" width=40px height=40px>
-      		<div id="slideout_inner">
-      		    <form id="cadrewidget">
-                      <div id="map"></div>
-                      <button type="button" name="buttonadd" id="buttonadd" onclick="add()">+</button>
-                      <button type="button" name="buttonadd" id="buttonsupp" onclick="sup()">-</button>
-                      <div id="geolocalisation">
-                          <button type="button" id="locate-user-button" onclick="locateUser()">Get my location</button>
-                          <input type="text" value="Address" id="get-address">
-                          <button type="button" id="locate-address" onclick="locateAddress()">Get address location</button>
-                      </div>
-              </form>
-                <div id="info"></div>
-      		</div>
-      	</div>
+    <div id="slideout">
+        <img src="https://d30y9cdsu7xlg0.cloudfront.net/png/218672-200.png" alt="App's" width=40px height=40px>
+        <div id="slideout_inner">
+            <form id="cadrewidget">
+                <div id="map"></div>
+                <button type="button" name="buttonadd" id="buttonadd" onclick="add()">+</button>
+                <button type="button" name="buttonadd" id="buttonsupp" onclick="sup()">-</button>
+                <div id="geolocalisation">
+                    <button type="button" id="locate-user-button" onclick="locateUser()">Get my location</button>
+                    <input type="text" value="Address" id="get-address">
+                    <button type="button" id="locate-address" onclick="locateAddress()">Get address location</button>
+                </div>
+            </form>
+            <div id="info"></div>
+        </div>
+    </div>
 
-        <footer>
-            <script type='text/javascript' src='leaflet/leaflet.js'></script>
+    <footer>
+        <script type='text/javascript' src='leaflet/leaflet.js'></script>
 
         <!--
-            <script type='text/javascript' src="jquery/jquery-2.1.4.min.js"></script>
-            <script type='text/javascript' src="geoSearch/js/l.control.geosearch.js"></script>
-            <script type='text/javascript' src="geoSearch/js/l.geosearch.provider.openstreetmap.js"></script>
-        -->
+        <script type='text/javascript' src="jquery/jquery-2.1.4.min.js"></script>
+        <script type='text/javascript' src="geoSearch/js/l.control.geosearch.js"></script>
+        <script type='text/javascript' src="geoSearch/js/l.geosearch.provider.openstreetmap.js"></script>
+    -->
 
 
-            <script type='text/javascript' src="leaflet-control-geocoder/Control.Geocoder.js"></script>
+    <script type='text/javascript' src="leaflet-control-geocoder/Control.Geocoder.js"></script>
 
-			<script type='text/javascript' src='cosy.js'></script>
-            <script type='text/javascript' src='cosy-localisation.js'></script>
-		</footer>
-	</body>
+    <script type='text/javascript' src='cosy.js'></script>
+    <script type='text/javascript' src='cosy-localisation.js'></script>
+</footer>
+</body>
 </html>
