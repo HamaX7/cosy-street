@@ -2,25 +2,36 @@
 <html>
     <head>
         <meta charset="utf-8" />
-        <title>Le javascript</title>
+        <title>Cosy Street</title>
 
-        <link rel="stylesheet" type="text/css" href="./leaflet/leaflet.css" />
+        <link rel="stylesheet" type="text/css" href="leaflet/leaflet.css" />
         <link rel="stylesheet" type="text/css" href="cosy.css" />
+        <link rel="stylesheet" href="geoSearch/css/l.geosearch.css">
+    <!--
+        <link rel="stylesheet" href="leaflet-control-geocoder/Control.Geocoder.css" />
+    -->
     </head>
 
     <body>
     	<header>LeafLet Demo</header>
 
-        <div id="map"></div>
+        <div id="map" class="leaflet-container leaflet-retina leaflet-fade-anim"></div>
         <div id="geolocalisation">
-            <button type="button" id="locate-user-button" onclick="locateUser()">Get my localisation</button>
-            <input type="text" value="Adresse" id="get-adress">
-            <button type="button" id="locate-adress" onclick="locateAdress()">Get localisation</button>
+            <button type="button" id="locate-user-button" onclick="locateUser()">Get my location</button>
+            <input type="text" value="Address" id="get-address">
+            <button type="button" id="locate-address" onclick="locateAddress()">Get address location</button>
         </div>
         <div id="info"></div>
 
         <footer>
-            <script type='text/javascript' src='./leaflet/leaflet.js'></script>
+            <script type='text/javascript' src='leaflet/leaflet.js'></script>
+
+            <script type='text/javascript' src="geoSearch/js/l.control.geosearch.js"></script>
+            <script type='text/javascript' src="geoSearch/js/l.geosearch.provider.openstreetmap.js"></script>
+
+        <!--
+            <script type='text/javascript' src="leaflet-control-geocoder/Control.Geocoder.js"></script>
+        -->
 			<script type='text/javascript' src='cosy.js'></script>
             <script type='text/javascript' src='cosy-localisation.js'></script>
 		</footer>
