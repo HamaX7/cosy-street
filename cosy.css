@@ -1,4 +1,30 @@
 #map {
-    width: 100%;
+    width: 75%;
     height: 600px;
+    display: inline;
+    float: left;
+}
+
+div #geolocalisation {
+    display: inline;
+}
+
+#geolocalisation #locate-user-button {
+    width: 100px;
+    height: 50px;
+    border-radius: 25%;
+    margin: 2% 5%;
+}
+
+#geolocalisation #locate-adress {
+    width: 100px;
+    height: 50px;
+    border-radius: 25%;
+    margin: 2% 5%;
+}
+
+#geolocalisation #get-adress {
+    width: 100px;
+    height: 50px;
+    margin: 2% 5%;
 }

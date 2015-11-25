@@ -12,6 +12,12 @@
     	<header>LeafLet Demo</header>
 
         <div id="map"></div>
+        <div id="geolocalisation">
+            <button type="button" id="locate-user-button" onclick="locateUser()">Get my localisation</button>
+            <input type="text" value="Adresse" id="get-adress">
+            <button type="button" id="locate-adress" onclick="locateAdress()">Get localisation</button>
+        </div>
+        <div id="info"></div>
 
         <footer>
             <script type='text/javascript' src='./leaflet/leaflet.js'></script>
