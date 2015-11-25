@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+  <head>
+  	<meta charset="utf-8">
+  	<title>CSS Slideout</title>
+    <link rel="stylesheet" type="text/css" href="sidebar.css">
+    <link rel="stylesheet" href="http://cdn.leafletjs.com/leaflet/v0.7.7/leaflet.css" />
+  	<style type="text/css" media="screen"></style>
+  </head>
+
+  <body>
+  	<div id="slideout">
+      <img src="https://d30y9cdsu7xlg0.cloudfront.net/png/218672-200.png" alt="App's" width=40px height=40px>
+  		<div id="slideout_inner">
+  			<form id="cadrewidget">
+          <div id="map"></div>
+          <button type="button" name="buttonadd" id="buttonadd" onclick="add()">+</button>
+          <button type="button" name="buttonadd" id="buttonsupp" onclick="sup()">-</button>
+  			</form>
+  		</div>
+  	</div>
+    <script src="http://cdn.leafletjs.com/leaflet/v0.7.7/leaflet.js"></script>
+    <script>
+      var lat = 48.856;
+      var lon = 2.3508;
+      var map = L.map('map').setView([lat, lon], 15);
+      L.tileLayer('https://api.tiles.mapbox.com/v4/{id}/{z}/{x}/{y}.png?access_token=pk.eyJ1IjoiY29zeXN0cmVldCIsImEiOiJjaWhkaHRzN3UwYm9pdmJrbHZuaWIwOThrIn0.AjYuz32cxPVxwTlKpXG_Ww', {
+      maxZoom: 18,
+      minZoom: 13,
+      id: 'mapbox.streets'
+      }).addTo(map);
+        var c = 100;
+        var marker = L.marker([lat, lon]).addTo(map);
+        var circle = L.circle([lat, lon], 500, {
+          color: 'green',
+          fillColor: '#049372',
+          fillOpacity: 0.3
+      }).addTo(map);
+        var popup = L.popup();
+        marker.bindPopup("<b>COUCOU !</b><br>Vous etes ici !").openPopup();
+    </script>
+  </body>
+</html>
