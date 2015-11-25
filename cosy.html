@@ -16,15 +16,24 @@
     </head>
 
     <body>
-    	<header>LeafLet Demo</header>
+    	<header></header>
 
-        <div id="map" class="leaflet-container leaflet-retina leaflet-fade-anim"></div>
-        <div id="geolocalisation">
-            <button type="button" id="locate-user-button" onclick="locateUser()">Get my location</button>
-            <input type="text" value="Address" id="get-address">
-            <button type="button" id="locate-address" onclick="locateAddress()">Get address location</button>
-        </div>
-        <div id="info"></div>
+        <div id="slideout">
+          <img src="https://d30y9cdsu7xlg0.cloudfront.net/png/218672-200.png" alt="App's" width=40px height=40px>
+      		<div id="slideout_inner">
+      		    <form id="cadrewidget">
+                      <div id="map"></div>
+                      <button type="button" name="buttonadd" id="buttonadd" onclick="add()">+</button>
+                      <button type="button" name="buttonadd" id="buttonsupp" onclick="sup()">-</button>
+      			</form>
+                <div id="geolocalisation">
+                    <button type="button" id="locate-user-button" onclick="locateUser()">Get my location</button>
+                    <input type="text" value="Address" id="get-address">
+                    <button type="button" id="locate-address" onclick="locateAddress()">Get address location</button>
+                </div>
+                <div id="info"></div>
+      		</div>
+      	</div>
 
         <footer>
             <script type='text/javascript' src='leaflet/leaflet.js'></script>
