@@ -1,0 +1,38 @@
+var bdd = [
+	{
+	"ref": "5734d",
+	"info": "T3",
+	"tel": "01645574820",
+	"mail": "alzett_m@etna-alternance.net",
+	"url": "http://www.century21.fr/",
+	"lat": "48.8131369",
+	"lng": "2.3931367000000137"
+	},
+	{
+	"ref": "65f34",
+	"info": "T1bis",
+	"tel": "01645574821",
+	"mail": "kith_s@etna-alternance.net",
+	"url": "http://www.century21.fr/",
+	"lat": "48.8130013",
+	"lng": "2.3890363000000434"
+	},
+	{
+	"ref": "76khj5",
+	"info": "T2",
+	"tel": "01645574822",
+	"mail": "noblet_r@etna-alternance.net",
+	"url": "http://www.century21.fr/",
+	"lat": "48.8277657",
+	"lng": "2.371855099999948"
+	},
+	{
+	"ref": "76ef6fed",
+	"info": "",
+	"tel": "",
+	"mail": "",
+	"url": "",
+	"lat": "48.81220200000001",
+	"lng": "2.384232300000008"
+	}
+];
