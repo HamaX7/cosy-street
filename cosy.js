@@ -10,10 +10,3 @@ L.tileLayer('https://api.tiles.mapbox.com/v4/{id}/{z}/{x}/{y}.png?access_token={
     id: 'cosystreet.o8f5hg5e',
     accessToken: 'pk.eyJ1IjoiY29zeXN0cmVldCIsImEiOiJjaWhkaHRzN3UwYm9pdmJrbHZuaWIwOThrIn0.AjYuz32cxPVxwTlKpXG_Ww'
 }).addTo(map);
-
-map.locate({setView: true, maxZoom: 16});
-map.on('locationfound', onLocationFound);
-
-function onLocationFound(e) {
-    L.marker(e.latlng).addTo(map);
-}
